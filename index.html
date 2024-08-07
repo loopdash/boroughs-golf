@@ -17,13 +17,8 @@
             text-align: center;
         }
         .logo {
-            background: #fff;
-            border: 3px solid #c9bd95;
             max-width: 55px;
-            padding: 21px 2px;
-            border-radius: 55px;
-            margin-bottom: -30px;
-            z-index: 100;
+            padding: 14px 2px;
             position: absolute;
             margin-left: -36px;
         }
@@ -42,7 +37,7 @@
             margin: 0 auto;
         }
         h1 {
-            color: rgba(255,255,255,0.95);
+            color: white;
             text-transform: uppercase;
             font-family: "Prata";
             font-weight: 300;
@@ -64,7 +59,6 @@
             width: 100%;
             max-width: 400px;
             margin: 0 auto;
-            padding: 20px;
             border-radius: 5px;
         }
         #mc_embed_signup form {
@@ -105,14 +99,22 @@
         #mc_embed_signup .button:hover {
             background-color: #a69a75;
         }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+            h2 {
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 <body>
-    <img src="assets/logo.png" alt="Logo" class="logo">
+    <img src="assets/logo-final.png" alt="Logo" class="logo">
 
     <div class="video-container">
         <video autoplay muted loop>
-            <source src="assets/video.mp4" type="video/mp4">
+            <source src="assets/video-cropped.mp4" type="video/mp4">
         </video>
     </div>
     <div class="text-container">
