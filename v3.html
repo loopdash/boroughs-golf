@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>New York City's Private Indoor Golf Club</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-QWB0EMFMQD"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-QWB0EMFMQD');
+	</script>
+	<style type="text/css">
+		/*
+		** font face
+		*/
+		/* @font-face {
+			font-family: 'Lato';
+			src: url('font/MrsEavesLiningOT/MrsEavesLiningOT.eot');
+			src: url('font/MrsEavesLiningOT/MrsEavesLiningOT.eot?#iefix') format('embedded-opentype'),
+				url('font/MrsEavesLiningOT/MrsEavesLiningOT.woff2') format('woff2'),
+				url('font/MrsEavesLiningOT/MrsEavesLiningOT.woff') format('woff'),
+				url('font/MrsEavesLiningOT/MrsEavesLiningOT.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+			font-display: swap;
+		} */
+
+
+		/* @font-face {
+			font-family: 'Amasis';
+			src: url(font/AmasisMTW1G.otf);
+		} */
+
+		body {
+			margin: 0;
+			padding: 0;
+			background: #0A2A3B;
+		}
+
+		/* 
+		** header
+		*/
+		header#golf-club-header {
+			text-align: center;
+			position: relative;
+		}
+		
+		.logo-wrapper {
+			margin: 0 auto;
+			text-align: center;
+			position: relative;
+			display: inline-block;
+		}
+
+		.logo-wrapper span {
+			display: inline-block;
+			vertical-align: middle;
+			padding: 1px;
+			border: 1px solid #cabe95;
+			border-radius: 68px;
+		}
+
+		.logo-wrapper span .main-logo {
+			display: block;
+			margin: 0 auto;
+			max-width: 102;
+			border-radius: 68px;
+			background-color: #cabe95;
+		}
+
+		header .header-login {
+			position: absolute;
+			right: 0;
+			color: #F7EBC5;
+			font-family: "Lato", sans-serif;
+			text-decoration: none;
+			top: calc(50% - 10px);
+			font-size: 12px;
+		}
+
+		/* 
+		** main
+		*/
+		#main {
+			max-width: 1200px;
+			padding: 2rem;
+			margin: 0 auto;
+		}
+
+		.golf-club-container {
+			width: 100%;
+			max-width: 800px;
+			/* border: 2px solid #909090; */
+			margin: 4rem auto;
+		}
+
+		.golf-club-wrap {
+			/* border: 2px solid #DAD1B4;
+			margin: 1rem; */
+		}
+
+		.golf-club-inner {
+			max-width: 1024px;
+			/* width: 90%; */
+			margin: 0 auto;
+			text-align: center;
+			/* padding: 3rem 0 2rem; */
+		}
+
+		.heading {
+			font-family: "Libre Baskerville", serif;
+			color: #456052;
+			color: #F7EBC5;
+			line-height: 1.2;
+			font-size: 44px;
+			font-weight: 400;
+			margin: 0;
+			letter-spacing: -2px;
+		}
+
+	.heading span {
+			font-size: 38px;
+		}
+
+		.golf-club-img {
+			/* max-width: 500px; */
+			/* width: 100%; */
+			width: 100%;
+			margin: 2rem auto 5rem;
+		}
+
+		.sub-hd {
+			font-family: "Libre Baskerville", serif;
+			color: #456052;
+			color: #F7EBC5;
+			/* font-family: 'Amasis'; */
+			line-height: 1.25;
+			font-size: 30px;
+			font-size: 60px;
+			margin: 0px auto 70px;
+			padding: 0;
+			font-weight: 400;
+			letter-spacing: -2px;
+		}
+
+		.sub-hd-2 {
+			margin-top: 1.4rem;
+		}
+
+		.gc-logo {
+			max-width: 90px;
+			width: 100%;
+			margin-top: 1.8rem;
+		}
+
+		/*
+		** form
+		*/
+		.form-container {
+			max-width: 560px;
+			width: 100%;
+			margin: 0 auto 30px;
+			text-align: left;
+		}
+
+		.form-container .mc-field-group-row.two-col {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+
+		.form-container .mc-field-group-row .mc-field-group {
+			min-width: calc(50% - 5px);
+		}
+
+		.form-container .mc-field-group label {
+			font-family: "Lato", Arial, Helvetica, sans-serif;
+			color: #456052;
+			color: #F7EBC5;
+			font-weight: 500;
+			font-size: 14px;
+			display: block;
+			margin: 0 0 4px 0;
+		}
+
+		.form-container input:not(input[type="submit"]) {
+			font-family: "Lato",Arial, Helvetica, sans-serif;
+			color: #456052;
+			color: #F7EBC5;
+			/* border: 2px solid #456052; */
+			border: none;
+			padding: 7px 10px;
+			margin: 0 auto 4px;
+			/* width: calc(100% - 10px); */
+			font-size: 14px;
+			width: 100%;
+			background-color: #214456;
+			border-radius: 15px;
+			box-sizing: border-box;
+		}
+
+		.form-container input:not(input[type="submit"])::placeholder {
+			color: #456052;
+			font-weight: 500;
+			/* font-family: 'Amasis'; */
+		}
+
+		.form-container .mc-field-group-row.title {
+			font-family: "Lato", Arial, Helvetica, sans-serif;
+			color: #F7EBC5;
+			font-size: 14px;
+			display: block;
+			margin: 0 0 7px 0;
+			font-weight: 700;
+		}
+
+		.form-container .mc-field-group-row.title .required, 
+		.form-container .mc-field-group-row.email .required, 
+		.form-container .mc-field-group-row.msg .required {
+			font-weight: 500;
+		}
+
+		.form-container .mc-field-group-row.email {
+			margin: 10px 0 0;
+		}
+
+		.form-container .mc-field-group-row.email label, 
+		.form-container .mc-field-group-row.msg label {
+			font-weight: 700;
+		}
+
+		.form-container .mc-field-group-row.signup {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+		}
+
+		.form-container .mc-field-group-row.signup input {
+			width: 20px;
+			max-width: 20px;
+			margin: 0;
+		}
+
+		.form-container .mc-field-group-row.signup label {
+			min-width: calc(100% - 20px);
+			font-family: "Lato", Arial, Helvetica, sans-serif;
+			color: #F7EBC5;
+			font-size: 12px;
+			position: relative;
+			cursor: pointer;
+		}
+
+		.form-container .mc-field-group-row.signup input {
+			padding: 0;
+			height: initial;
+			width: initial;
+			margin-bottom: 0;
+			display: none;
+			cursor: pointer;
+		}
+
+		.form-container .mc-field-group-row.signup label:before {
+			content:'';
+			-webkit-appearance: none;
+			background-color: transparent;
+			border: 1px solid #F7EBC5;
+			box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+			padding: 6px;
+			display: inline-block;
+			position: relative;
+			vertical-align: middle;
+			cursor: pointer;
+			margin-right: 5px;
+			border-radius: 10px;
+		}
+
+		.form-container .mc-field-group-row.signup input:checked + label:before {
+			background: #F7EBC5;
+		}
+
+		.form-container .mc-field-group-row.signup input:checked + label:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 3px;
+			left: 5px;
+			width: 2px;
+			height: 6px;
+			border: solid #fff;
+			border-width: 0 2px 2px 0;
+			transform: rotate(45deg);
+		}
+
+		.form-container .mc-field-group-row.msg {
+			margin: 15px 0 0;
+		}
+
+		.form-container textarea {
+			font-family: "Lato" , Arial, Helvetica, sans-serif;
+			color: #F7EBC5;
+			border: none;
+			padding: 7px 10px;
+			font-size: 14px;
+			width: 100%;
+			background-color: #214456;
+			border-radius: 15px;
+			box-sizing: border-box;
+			height: 70px;
+		}
+
+		.form-container input[type="submit"] {
+			background: #456052;
+			background: #F7EBC5;
+			color: #0A2A3B;
+			padding: 22px 20px;
+			font-size: 12px;
+			/* font-family: 'Amasis'; */
+			border: 0;
+			margin: 10px auto 0;
+			width: 100%;
+			max-width: 160px;
+			cursor: pointer;
+			border-radius: 30px;
+			font-weight: 700;
+			font-family: "Lato" , Arial, Helvetica, sans-serif;
+			letter-spacing: 2px;
+		}
+
+
+		/*
+		** footer
+		*/
+		#footer {
+			padding: 15px;
+			background-color: #0A2A3B;
+		}
+
+		/*
+		** Responsive
+		*/
+		@media only screen and (max-width: 900px) {
+			#main {
+				padding: 1rem;
+			}
+
+			.heading {
+				font-size: 26px;
+			}
+		.heading span {
+				font-size: 22px;
+			}
+
+			.gc-logo {
+				max-width: 60px;
+				margin-top: 1rem;
+			}
+
+			.golf-club-container {
+				width: 100%;
+				/* border: 2px solid #909090; */
+				margin: 2rem auto 0;
+			}
+
+		}
+
+		@media only screen and (max-width: 600px) {
+			#main {
+				/* padding: .4rem; */
+			}
+
+			.logo-wrapper span {
+				padding: 0.5px 0.5px 1px 0.5px;
+			}
+
+			.logo-wrapper span .main-logo {
+				max-width: 59px;
+			}
+
+			.heading {
+				font-size: 22px;
+				margin-bottom: 50px;
+				letter-spacing: -1px;
+			}
+
+			.golf-club-img {
+				margin: 1rem auto 2rem;
+			}
+
+			.sub-hd {
+				font-size: 26px;
+				letter-spacing: -1px;
+			}
+
+			.gc-logo {
+				max-width: 40px;
+				margin-top: 0.4rem;
+			}
+
+			.form-container .mc-field-group-row.submit {
+				text-align: center;
+			}
+
+			.form-container input[type="submit"] {
+				/* font-size: 16px; */
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<main id="main">
+		<header id="golf-club-header">
+			<a href="#" class="logo-wrapper">
+				<span>
+					<img src="assets/logo-final.png" alt="The Boroughs Golf Club" class="main-logo">
+				</span>
+			</a>
+		</header>
+		<div class="golf-club-container">
+			<div class="golf-club-wrap">
+				<div class="golf-club-inner">
+					<h1 class="heading">The Boroughs Golf Club</br><span>Upper East Side</span></h1>
+					<!-- <img alt="The Boroughs Golf Club" class="golf-club-img" src="assets/The-Boroughs-Golf-Club.jpg" /> -->
+					<video loop muted autoplay playsinline width="100%" class="golf-club-img">
+						<source src="assets/Boroughs_Bag-Street.webm" type="video/webm" />
+						<source src="assets/GolfBag_2.mp4" type="video/mp4" />
+					</video>
+					<h2 class="sub-hd">A private indoor golf club.<br>An intimate community.<br>Whenever you want.</h2>
+					<!-- <div class="sub-hd sub-hd-2">Coming 2025</div> -->
+
+					<div class="form-container">
+						<div id="mc_embed_signup">
+							<div id="mc_embed_shell">
+								<div id="mc_embed_signup">
+									<form
+										action="https://loopdash.us17.list-manage.com/subscribe/post?u=62b0be5bc7e66c41b6115d801&amp;id=55a22716d6&amp;f_id=005fc2e1f0"
+										method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+										class="validate" target="_blank">
+										<div id="mc_embed_signup_scroll">
+											<div class="mc-field-group-row title">
+											</div>
+											<div class="mc-field-group-row name two-col">
+												<div class="mc-field-group">
+													<label for="mce-FNAME">First Name</label>
+													<input type="text" name="FNAME"
+														placeholder="" class="required text" id="mce-FNAME"
+														required="" value="">
+												</div>
+												<div class="mc-field-group">
+													<label for="mce-LNAME">Last Name</label>
+													<input type="text" name="LNAME" class=" text"
+														id="mce-LNAME" value="" placeholder="">
+												</div>
+											</div>
+											<div class="mc-field-group-row email">
+												<div class="mc-field-group">
+													<label for="mce-EMAIL">Email <span class="required">(required)</span></label>
+													<input type="email" name="EMAIL"
+														class="required email" id="mce-EMAIL" required=""
+														placeholder="" value="">
+												</div>
+											</div>
+											<div class="mc-field-group-row signup">
+												<input type="checkbox" name="SIGNUP" id="mce-SIGNUP">
+												<label for="mce-SIGNUP">Sign up for news & updates</label>
+											</div>
+											<div class="mc-field-group-row msg">
+												<div class="mc-field-group">
+													<label for="mce-MSG">Message</label>
+													<textarea name="MESSAGE" id="mce-MSG"></textarea>
+												</div>
+											</div>
+											<div id="mce-responses" class="clear">
+												<div hidden="">
+													<input type="hidden" name="tags" value="203">
+												</div>
+												<div class="response" id="mce-error-response" style="display: none;">
+												</div>
+												<div class="response" id="mce-success-response" style="display: none;">
+												</div>
+											</div>
+											<div aria-hidden="true" style="position: absolute; left: -5000px;">
+												<input
+													type="text" name="b_62b0be5bc7e66c41b6115d801_55a22716d6"
+													tabindex="-1" value="">
+											</div>
+											<div class="mc-field-group-row submit clear">
+												<input type="submit" name="subscribe"
+													id="mc-embedded-subscribe" class="button"
+													value="SUBMIT"><!-- Register Your Interest -->
+											</div>
+										</div>
+									</form>
+								</div>
+								<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+								<script type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[6] = 'COMPANY'; ftypes[6] = 'text'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+							</div>
+						</div>
+					</div>
+					<!-- <img class="gc-logo" src="assets/logo-final.png" /> -->
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer id="footer"></footer>
+</body>
+
+</html>
