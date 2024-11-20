@@ -99,7 +99,7 @@
 			width: 100%;
 			max-width: 800px;
 			/* border: 2px solid #909090; */
-			margin: 4rem auto;
+			margin: 50px auto 0 auto;
 		}
 
 		.golf-club-wrap {
@@ -134,7 +134,7 @@
 			/* max-width: 500px; */
 			/* width: 100%; */
 			width: 100%;
-			margin: 2rem auto 5rem;
+			margin: 50px auto 5rem;
 		}
 
 		.sub-hd {
@@ -163,6 +163,7 @@
 		}
 
 		.interest {
+			font-size: 24px;
 			margin-bottom: 17px;
 			font-weight: 600;
 		}
@@ -350,6 +351,20 @@
 			letter-spacing: 2px;
 		}
 
+		.req-text {
+			color: #F7EBC5;
+    	font-family: "Lato", Arial, Helvetica, sans-serif;
+    	font-size: 12px;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		.form-container .mc-field-group-row.submit {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			gap: 0.5rem;
+		}
 
 		/*
 		** footer
@@ -407,7 +422,7 @@
 			}
 
 			.golf-club-img {
-				margin: 1rem auto 36px;
+				margin: 0 auto 36px;
 			}
 
 			.sub-hd {
@@ -422,7 +437,10 @@
 			}
 
 			.form-container .mc-field-group-row.submit {
-				text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0.5rem;
 			}
 
 			.form-container input[type="submit"] {
@@ -467,20 +485,20 @@
 											</div>
 											<div class="mc-field-group-row name two-col">
 												<div class="mc-field-group">
-													<label for="mce-FNAME">First Name</label>
+													<label for="mce-FNAME">First Name <span class="required">*</span></label>
 													<input type="text" name="FNAME"
 														placeholder="" class="required text" id="mce-FNAME"
 														required="" value="">
 												</div>
 												<div class="mc-field-group">
-													<label for="mce-LNAME">Last Name</label>
+													<label for="mce-LNAME">Last Name <span class="required">*</span></label>
 													<input type="text" name="LNAME" class=" text"
 														id="mce-LNAME" value="" placeholder="">
 												</div>
 											</div>
 											<div class="mc-field-group-row email">
 												<div class="mc-field-group">
-													<label for="mce-EMAIL">Email <span class="required">(required)</span></label>
+													<label for="mce-EMAIL">Email <span class="required">*</span></label>
 													<input type="email" name="EMAIL"
 														class="required email" id="mce-EMAIL" required=""
 														placeholder="" value="">
@@ -510,6 +528,7 @@
 												<input type="submit" name="subscribe"
 													id="mc-embedded-subscribe" class="button"
 													value="SUBMIT"><!-- Register Your Interest -->
+													<span class="req-text">* indicates a required field.</span>
 											</div>
 										</div>
 									</form>
