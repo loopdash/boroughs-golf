@@ -66,15 +66,15 @@
 			vertical-align: middle;
 			padding: 1px;
 			border: 1px solid #cabe95;
-			border-radius: 46px;
+			border-radius: 70px;
 		}
 
 		.logo-wrapper span .main-logo {
 			display: block;
 			margin: 0 auto;
-			max-width: 79px;
+			max-width: 119px;
 			border: 2px solid #cabe95;
-			border-radius: 46px;
+			border-radius: 70px;
 			background-color: #cabe95;
 		}
 
@@ -93,7 +93,7 @@
 		*/
 		#main {
 			max-width: 1200px;
-			padding: 2rem;
+			padding: 4rem 2rem 2rem;
 			margin: 0 auto;
 		}
 
@@ -101,7 +101,7 @@
 			width: 100%;
 			max-width: 800px;
 			/* border: 2px solid #909090; */
-			margin: 4rem auto;
+			margin: 2rem auto 4rem;
 		}
 
 		.golf-club-wrap {
@@ -128,6 +128,17 @@
 			letter-spacing: -2px;
 		}
 
+		.heading-subtext {
+			font-family: "Libre Baskerville", serif;
+			color: #456052;
+			color: #4c331c;
+			line-height: 1.5;
+			font-size: 50px;
+			font-weight: 400;
+			margin: 0;
+			letter-spacing: -2px;
+		}
+
 		.golf-club-img {
 			/* max-width: 500px; */
 			/* width: 100%; */
@@ -140,10 +151,10 @@
 			color: #456052;
 			color: #4c331c;
 			/* font-family: 'Amasis'; */
-			line-height: 1.25;
+			line-height: 1.4;
 			font-size: 30px;
-			font-size: 60px;
-			margin: 0px auto 70px;
+			font-size: 50px;
+			margin: 0px auto 5rem;
 			padding: 0;
 			font-weight: 400;
 			letter-spacing: -2px;
@@ -169,6 +180,28 @@
 			text-align: left;
 		}
 
+		.form-container .form-header-wrapper {
+			text-align: center;
+		}
+
+		.form-container .form-header-wrapper .form-header-subtext {
+			font-family: "Libre Baskerville", serif;
+			color: #456052;
+			color: #4c331c;
+			line-height: 1.5;
+			font-size: 50px;
+			font-weight: 400;
+			margin: 0;
+			letter-spacing: -2px;
+		}
+
+		.form-container .form-header-wrapper .form-header {
+			font-family: "Lato", Arial, Helvetica, sans-serif;
+			color: #4c331c;
+			margin: 0.5rem 0 2rem 0;
+			font-weight: 700;
+		}
+
 		.form-container .mc-field-group-row.two-col {
 			display: flex;
 			align-items: center;
@@ -183,7 +216,7 @@
 			font-family: "Lato", Arial, Helvetica, sans-serif;
 			color: #456052;
 			color: #4c331c;
-			font-weight: 500;
+			font-weight: 700;
 			font-size: 14px;
 			display: block;
 			margin: 0 0 4px 0;
@@ -211,6 +244,14 @@
 			/* font-family: 'Amasis'; */
 		}
 
+		.mc-field-group-row.instructions {
+			text-align: center;
+		}
+
+		.mc-field-group-row.instructions label {
+			font-family: "Lato", Arial, Helvetica, sans-serif;
+		}
+
 		.form-container .mc-field-group-row.title {
 			font-family: "Lato", Arial, Helvetica, sans-serif;
 			color: #4c331c;
@@ -223,7 +264,7 @@
 		.form-container .mc-field-group-row.title .required, 
 		.form-container .mc-field-group-row.email .required, 
 		.form-container .mc-field-group-row.msg .required {
-			font-weight: 500;
+			font-weight: 700;
 		}
 
 		.form-container .mc-field-group-row.email {
@@ -314,17 +355,21 @@
 			height: 70px;
 		}
 
+		.form-container .mc-field-group-row.submit {
+			text-align: center;
+		}
+
 		.form-container input[type="submit"] {
 			background: #456052;
 			background: #4c331c;
 			color: #fff;
-			padding: 22px 20px;
+			padding: 15px;
 			font-size: 12px;
 			/* font-family: 'Amasis'; */
 			border: 0;
-			margin: 10px auto 0;
+			margin: 10px auto;
 			width: 100%;
-			max-width: 160px;
+			max-width: 130px;
 			cursor: pointer;
 			border-radius: 30px;
 			font-weight: 700;
@@ -338,7 +383,78 @@
 		*/
 		#footer {
 			padding: 15px;
-			background-color: #4c331c;
+			/* background-color: #4c331c; */
+			margin-bottom: 4rem;
+		}
+
+		.footer-wrapper {
+			max-width: 800px;
+			margin: 0 auto;
+			position: relative;
+		}
+
+		.footer-logo-wrapper {
+			margin: 0 auto;
+			text-align: center;
+			position: absolute;
+			display: inline-block;
+			left: 0;
+			right: 0;
+			top: -40px;
+		}
+
+		.footer-logo-wrapper span {
+			display: inline-block;
+			vertical-align: middle;
+			padding: 1px;
+			border: 1px solid #cabe95;
+			border-radius: 46px;
+			background: #e5e1db;
+		}
+
+		.footer-logo-wrapper span .main-logo {
+			display: block;
+			margin: 0 auto;
+			max-width: 79px;
+			border: 2px solid #cabe95;
+			border-radius: 46px;
+			background-color: #cabe95;
+		}
+
+		.footer-text-wrapper {
+			display: flex;
+			width: 100%;
+			border: 1px solid #cabe95;
+			padding: 7px 15px;
+			align-items: center;
+			justify-content: space-between;
+			box-sizing: border-box;
+		}
+
+		.footer-text-wrapper img.icon-separator {
+			max-width: 16px;
+		}
+
+		.footer-text-wrapper .left, 
+		.footer-text-wrapper .right {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			max-width: 40%;
+			width: 100%;
+			gap: 10px;
+			box-sizing: border-box;
+		}
+
+		.footer-text-wrapper .footer-text {
+			font-family: "Libre Baskerville", serif;
+			color: #4c331c;
+			line-height: 1.4;
+			font-size: 12px;
+			margin: 0;
+			padding: 0;
+			font-weight: 400;
+			letter-spacing: 2px;
 		}
 
 		/*
@@ -346,11 +462,15 @@
 		*/
 		@media only screen and (max-width: 900px) {
 			#main {
-				padding: 1rem;
+				padding: 2rem 1rem 1rem;
 			}
 
 			.heading {
 				font-size: 30px;
+			}
+
+			.heading-subtext {
+				font-size: 26px;
 			}
 
 			.sub-hd {
@@ -376,16 +496,24 @@
 			}
 
 			.logo-wrapper span {
-				padding: 0.5px 0.5px 1px 0.5px;
+				/* padding: 0.5px 0.5px 1px 0.5px; */
+				padding: 1px;
+				border-radius: 46px;
 			}
 
 			.logo-wrapper span .main-logo {
-				max-width: 59px;
+				max-width: 79px;
+				border-radius: 46px;
 			}
 
 			.heading {
 				font-size: 26px;
-				margin-bottom: 50px;
+				letter-spacing: -1px;
+			}
+
+			.heading-subtext {
+				font-size: 22px;
+				margin-bottom: 1rem;
 				letter-spacing: -1px;
 			}
 
@@ -394,8 +522,20 @@
 			}
 
 			.sub-hd {
-				font-size: 26px;
+				font-size: 24px;
 				letter-spacing: -1px;
+				margin-bottom: 2rem;
+			}
+
+			.form-container .form-header-wrapper .form-header-subtext {
+				line-height: 1.4;
+				font-size: 24px;
+				letter-spacing: -1px;
+			}
+
+			.form-container .form-header-wrapper .form-header {
+				margin: 0.5rem 0 1.5rem 0;
+				font-size: 14px;
 			}
 
 			.gc-logo {
@@ -410,6 +550,50 @@
 			.form-container input[type="submit"] {
 				/* font-size: 16px; */
 			}
+
+			#footer {
+				margin-bottom: 2rem;
+			}
+
+			.footer-wrapper {
+				text-align: center;
+			}
+
+			.footer-logo-wrapper {
+				margin: 0 auto 20px;
+				text-align: center;
+				position: relative;
+				left: auto;
+				right: auto;
+				top: unset;
+			}
+
+			.footer-logo-wrapper span .main-logo {
+				max-width: 60px;
+			}
+
+			.footer-text-wrapper {
+				padding: 7px 10px;
+				align-items: center;
+				justify-content: space-between;
+				flex-direction: column;
+			}
+
+			.footer-text-wrapper .left, .footer-text-wrapper .right {
+				align-items: center;
+				justify-content: center;
+				max-width: 100%;
+				width: 100%;
+				gap: 10px;
+			}
+
+			.footer-text-wrapper img.icon-separator {
+				max-width: 12px;
+			}
+
+			.footer-text-wrapper .footer-text {
+				font-size: 10px;
+			}
 		}
 	</style>
 </head>
@@ -422,12 +606,13 @@
 					<img src="assets/logo-final.png" alt="The Boroughs Golf Club" class="main-logo">
 				</span>
 			</a>
-			<a href="#" class="header-login">LOGIN</a>
+			<!-- <a href="#" class="header-login">LOGIN</a> -->
 		</header>
 		<div class="golf-club-container">
 			<div class="golf-club-wrap">
 				<div class="golf-club-inner">
-					<h1 class="heading">The Boroughs Golf Club</br>Upper East Side</h1>
+					<h1 class="heading">The Boroughs Golf Club</h1>
+					<div class="heading-subtext">Upper East Side</div>
 					<!-- <img alt="The Boroughs Golf Club" class="golf-club-img" src="assets/The-Boroughs-Golf-Club.jpg" /> -->
 					<video loop muted autoplay playsinline width="100%" class="golf-club-img">
 						<source src="assets/Boroughs_Bag-Street.webm" type="video/webm" />
@@ -437,6 +622,10 @@
 					<!-- <div class="sub-hd sub-hd-2">Coming 2025</div> -->
 
 					<div class="form-container">
+						<div class="form-header-wrapper">
+							<div class="form-header-subtext">Coming soon!</div>
+							<h3 class="form-header">Register your interest</h3>
+						</div>
 						<div id="mc_embed_signup">
 							<div id="mc_embed_shell">
 								<div id="mc_embed_signup">
@@ -445,34 +634,34 @@
 										method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
 										class="validate" target="_blank">
 										<div id="mc_embed_signup_scroll">
-											<div class="mc-field-group-row title">
+											<!-- <div class="mc-field-group-row title">
 												Name <span class="required">(required)</span>
-											</div>
+											</div> -->
 											<div class="mc-field-group-row name two-col">
 												<div class="mc-field-group">
-													<label for="mce-FNAME">First Name</label>
+													<label for="mce-FNAME">First Name <span class="required">*</span></label>
 													<input type="text" name="FNAME"
 														placeholder="" class="required text" id="mce-FNAME"
 														required="" value="">
 												</div>
 												<div class="mc-field-group">
-													<label for="mce-LNAME">Last Name</label>
-													<input type="text" name="LNAME" class=" text"
-														id="mce-LNAME" value="" placeholder="">
+													<label for="mce-LNAME">Last Name <span class="required">*</span></label>
+													<input type="text" name="LNAME" class="required text"
+														id="mce-LNAME" required="" value="" placeholder="">
 												</div>
 											</div>
 											<div class="mc-field-group-row email">
 												<div class="mc-field-group">
-													<label for="mce-EMAIL">Email <span class="required">(required)</span></label>
+													<label for="mce-EMAIL">Email <span class="required">*</span></label>
 													<input type="email" name="EMAIL"
 														class="required email" id="mce-EMAIL" required=""
 														placeholder="" value="">
 												</div>
 											</div>
-											<div class="mc-field-group-row signup">
+											<!-- <div class="mc-field-group-row signup">
 												<input type="checkbox" name="SIGNUP" id="mce-SIGNUP">
 												<label for="mce-SIGNUP">Sign up for news & updates</label>
-											</div>
+											</div> -->
 											<div class="mc-field-group-row msg">
 												<div class="mc-field-group">
 													<label for="mce-MSG">Message</label>
@@ -498,6 +687,9 @@
 													id="mc-embedded-subscribe" class="button"
 													value="SUBMIT"><!-- Register Your Interest -->
 											</div>
+											<div class="mc-field-group-row instructions clear">
+												<label for="">* indicates a required field.</label>
+											</div>
 										</div>
 									</form>
 								</div>
@@ -511,7 +703,28 @@
 			</div>
 		</div>
 	</main>
-	<footer id="footer"></footer>
+	<footer id="footer">
+		<div class="footer-wrapper">
+			<a href="#" class="footer-logo-wrapper">
+				<span>
+					<img src="assets/logo-final.png" alt="The Boroughs Golf Club" class="main-logo">
+				</span>
+			</a>
+
+			<div class="footer-text-wrapper">
+				<div class="left">
+					<img src="assets/diamond.png" class="icon-separator" alt="Diamond">
+					<div class="footer-text">THE BOROUGHS GOLF CLUB</div>
+					<img src="assets/diamond.png" class="icon-separator" alt="Diamond">
+				</div>
+				<div class="right">
+					<img src="assets/diamond.png" class="icon-separator" alt="Diamond">
+					<div class="footer-text">UPPER EAST SIDE</div>
+					<img src="assets/diamond.png" class="icon-separator" alt="Diamond">
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 
 </html>
