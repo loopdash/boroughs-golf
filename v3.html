@@ -392,6 +392,41 @@
 			width: 100%;
 		}
 
+/* For widths lower than 480px */
+@media only screen and (max-width: 479px) {
+    #footer .show480 {
+        display: block;
+    }
+    #footer .show768,
+    #footer .show960 {
+        display: none;
+    }
+}
+
+/* For widths between 480px and 960px */
+@media only screen and (min-width: 480px) and (max-width: 960px) {
+    #footer .show480 {
+        display: none;
+    }
+    #footer .show768 {
+        display: block;
+    }
+    #footer .show960 {
+        display: none;
+    }
+}
+
+/* For widths larger than 960px */
+@media only screen and (min-width: 961px) {
+    #footer .show480,
+    #footer .show768 {
+        display: none;
+    }
+    #footer .show960 {
+        display: block;
+    }
+}
+
 		/*
 		** Responsive
 		*/
@@ -562,7 +597,9 @@
 		</div>
 	</main>
 	<footer id="footer">
-		<img src="assets/white.png" alt="Footer" class="main-logo">
+		<img src="assets/480.png" alt="Footer" class="show480">
+		<img src="assets/768.png" alt="Footer" class="show768">
+		<img src="assets/960.png" alt="Footer" class="show960">
 	</footer>
 </body>
 
