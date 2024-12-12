@@ -434,20 +434,17 @@
 
 /* Header Image */
 .modal-header {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-	border-bottom: 3px solid #ffffff;
+	width: 100%;
+	height: auto;
 }
 .header-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+	width: 100%;
+	height: auto;
 }
 
 /* Modal Title */
 .modal.hidden {
-	display: none;
+	/* display: none; */
 }
 
 /* Thank You Message */
@@ -462,6 +459,30 @@
 	font-size: 35px;
   margin-bottom: 30px;
 }
+
+@media only screen and (max-width: 600px) {
+	.thank-you-message {
+		font-size: 18px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.modal-body {
+			border-right: 1px solid #F7EBC5;
+			border-left: 1px solid #F7EBC5;
+			border-bottom: 1px solid #F7EBC5;
+			margin: -33px 2rem 2rem 2rem;
+			padding: 1rem;
+	}
+	.follow-up {
+		font-size: 16px;
+	}
+	.modal-body {
+		margin: -33px 1rem 1rem 1rem;
+		padding: 1rem;
+}
+}
+
 
 		/*
 		** footer
@@ -664,11 +685,9 @@
     <button class="close-button" id="close-modal">X</button>
     <!-- Header Image -->
     <div class="modal-header">
-      <img src="assets/modal-image.png" alt="Background Image" class="header-image">
+      <img src="assets/modal-image-2.png" alt="Background Image" class="header-image">
     </div>
-		<div class="modal-logo">
-			<img src="assets/modal-logo.png" alt="Background Image">
-		</div>
+
     <!-- Modal Text -->
     <div class="modal-body">
       <p class="thank-you-message">
@@ -733,9 +752,7 @@ document.querySelector('.close-button').addEventListener('click', function () {
 
 	</main>
 	<footer id="footer">
-		<img src="assets/480.png" alt="Footer" class="show480">
-		<img src="assets/768.png" alt="Footer" class="show768">
-		<img src="assets/960.png" alt="Footer" class="show960">
+		<img src="assets/Group 9285126.svg" alt="Footer">
 	</footer>
 </body>
 
