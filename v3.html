@@ -478,7 +478,7 @@
 		font-size: 16px;
 	}
 	.modal-body {
-		margin: -29px 1rem 1rem 1rem;
+		margin: -17px 1rem 1rem 1rem;
 		padding: 1rem;
 }
 }
@@ -494,17 +494,20 @@
 		}
 		#footer img {
 			width: 100%;
+			padding-bottom: 3rem;
 		}
 
 /* For widths lower than 480px */
-@media only screen and (max-width: 479px) {
-    #footer .show480 {
-        display: block;
-    }
-    #footer .show768,
-    #footer .show960 {
-        display: none;
-    }
+@media only screen and (max-width: 768px) {
+		#footer img {
+			padding-bottom: 1rem;
+		}	
+}
+
+@media only screen and (max-width: 480px) {
+		#footer img {
+			padding-bottom: 0;
+		}	
 }
 
 /* For widths between 480px and 960px */
@@ -679,7 +682,7 @@
 </div>
 
 <!-- Modal -->
-<div id="modal" class="modal hidden">
+<div id="modal" class="modal ">
   <div class="modal-content">
     <!-- Close Button -->
     <button class="close-button" id="close-modal">X</button>
