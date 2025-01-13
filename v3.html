@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
 	<title>New York City's Private Indoor Golf Club</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -490,49 +490,49 @@
 		#footer {
 			padding: 0 0 1rem;
 			margin-top: 6rem;
-    	width: 100%
+    	width: 100%;
+			margin: 0 auto;
+	    text-align: center;
 		}
+
 		#footer img {
-			width: 100%;
+			max-width: 800px;
+			text-align: center;
+			margin: 0 auto;
 			padding-bottom: 3rem;
 		}
 
-/* For widths lower than 480px */
+/* Default styles (Desktop-first approach) */
+#footer .show-desktop {
+    display: block;
+}
+
+#footer .show-mobile {
+    display: none;
+}
+
+#footer img {
+    padding-bottom: 1rem;
+}
+
+/* For screens 768px and below (tablet and mobile) */
 @media only screen and (max-width: 768px) {
-		#footer img {
-			padding-bottom: 1rem;
-		}	
+    #footer .show-desktop {
+        display: none;
+    }
+
+    #footer .show-mobile {
+        display: block;
+    }
 }
 
+/* For screens 480px and below (mobile-specific) */
 @media only screen and (max-width: 480px) {
-		#footer img {
-			padding-bottom: 0;
-		}	
-}
-
-/* For widths between 480px and 960px */
-@media only screen and (min-width: 480px) and (max-width: 960px) {
-    #footer .show480 {
-        display: none;
-    }
-    #footer .show768 {
-        display: block;
-    }
-    #footer .show960 {
-        display: none;
+    #footer img {
+        padding-bottom: 0;
     }
 }
 
-/* For widths larger than 960px */
-@media only screen and (min-width: 961px) {
-    #footer .show480,
-    #footer .show768 {
-        display: none;
-    }
-    #footer .show960 {
-        display: block;
-    }
-}
 
 		/*
 		** Responsive
@@ -703,6 +703,11 @@
 </div>
 
 <script>
+// Ensure the modal is hidden on page load
+document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById('modal').classList.add('hidden');
+});
+
 document.getElementById('mc-embedded-subscribe-form').addEventListener('submit', function (e) {
   e.preventDefault(); // Prevent default form submission
 
@@ -750,12 +755,13 @@ document.getElementById('mc-embedded-subscribe-form').addEventListener('submit',
 document.querySelector('.close-button').addEventListener('click', function () {
   document.getElementById('modal').classList.add('hidden');
 });
-
 </script>
+
 
 	</main>
 	<footer id="footer">
-		<img src="assets/footer-logo.svg" alt="Footer">
+		<img class="show-desktop" src="assets/footer-logo.svg" alt="Footer">
+		<img class="show-mobile" src="assets/footer-mini-logo.svg" alt="Footer">
 	</footer>
 </body>
 
